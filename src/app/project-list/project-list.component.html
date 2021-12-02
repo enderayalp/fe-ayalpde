@@ -1,4 +1,5 @@
-<div (mouseenter)="hover=i" (mouseleave)="hover=-1" [ngClass]="{'lightgrey': hover==i}" class="list"
+<div (click)="showDetails(project)" (mouseenter)="hover=i" (mouseleave)="hover=-1" [ngClass]="{'lightgrey': hover==i}"
+     class="list"
      *ngFor="let project of projects;index as i;last as lastListItem">
   <div class="header">
     <div class="date">

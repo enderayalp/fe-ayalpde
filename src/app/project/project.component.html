@@ -1,1 +1,2 @@
-<p>project works!</p>
+<app-project-list *ngIf="viewState=== 'list'" (showDetailsEvent)="showDetails($event)"></app-project-list>
+<app-project-details *ngIf="viewState==='details'" (showListEvent)="showList()"></app-project-details>

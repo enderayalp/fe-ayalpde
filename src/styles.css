@@ -6,5 +6,7 @@ html, body {
 
 body {
   margin: 0;
+  background-color: #0e1111;
+  color: ghostwhite;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
