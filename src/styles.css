@@ -6,7 +6,8 @@ html, body {
 
 body {
   margin: 0;
-  background-color: #0e1111;
-  color: ghostwhite;
+  /*background-color: #0e1111; smoke black*/
+  background: white;
+  color: black;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }

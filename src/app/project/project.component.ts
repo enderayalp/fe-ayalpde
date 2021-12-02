@@ -9,7 +9,7 @@ type ViewState = 'list' | 'details';
   styleUrls: ['./project.component.css'],
 })
 export class ProjectComponent implements OnInit {
-  project: Project | undefined;
+  project: Project;
   viewState: ViewState = 'list';
 
   constructor() {}

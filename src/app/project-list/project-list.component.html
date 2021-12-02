@@ -11,21 +11,6 @@
   <br>
   <div style="white-space: pre-wrap">{{project.description}}</div>
   <br>
-  <div class="title">Eigene Funktion</div>
-  <div>{{project.role}}</div>
-  <br>
-  <div class="ItemList">
-    <div class="title">Eigene Aufgaben im Projekt</div>
-    <span *ngFor="let task of project.tasks; last as l">
-      {{task}} <span *ngIf="!l">,</span>
-    </span>
-  </div>
-  <br>
-  <div class="ItemList">
-    <div class="title">Eigesetzte Technologien</div>
-    <span *ngFor="let technology of project.technologies; last as l">
-      {{technology}} <span *ngIf="!l">,</span>
-    </span>
-  </div>
+
   <span *ngIf="!lastListItem"><hr></span>
 </div>
