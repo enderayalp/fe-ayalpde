@@ -6,7 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
+  activeId: string;
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  setActive(event: MouseEvent) {
+    let target = event.target as HTMLElement;
+    this.activeId = target.id;
+  }
 }

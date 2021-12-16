@@ -1,0 +1,23 @@
+<section [ngClass]="'hover:bg-gray-100'">
+  <p class="text-red-500">{{project.from}} - {{project.to}}</p>
+  <p>{{project.title}}</p>
+  <p>{{project.customer}}</p>
+  <p>Eigene Funktion</p>
+  <p>{{project.role}}</p>
+  <br>
+  <div>
+    <div>Eigene Aufgaben im Projekt</div>
+    <span *ngFor="let task of project.tasks; last as l">
+      {{task}} <span *ngIf="!l">,</span>
+    </span>
+  </div>
+  <br>
+  <div>
+    <div class="divide-y divide-solid divide-rose-400">Eigesetzte Technologien</div>
+    <span *ngFor="let technology of project.technologies; last as l">
+      {{technology}} <span *ngIf="!l">,</span>
+    </span>
+
+  </div>
+</section>
+

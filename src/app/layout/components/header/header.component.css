@@ -10,4 +10,18 @@
   }
 }
 
+a {
+  text-decoration: none;
+
+}
+
+.menu--margin-right-10 a {
+  margin-right: 10px;
+}
+
+.menu--active {
+  color: #e05233;
+  text-decoration: none;
+}
+
 

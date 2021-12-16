@@ -18,7 +18,7 @@ export class ProjectComponent implements OnInit {
     this.viewState = 'list';
   }
 
-  showDetails(project: Project): void {
+  showDetails(project: Project) {
     this.project = project;
     this.viewState = 'details';
   }
