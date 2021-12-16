@@ -1,17 +1,22 @@
-<div class="title">Eigene Funktion</div>
-<div>{{project.role}}</div>
-<br>
-<div class="ItemList">
-  <div class="title">Eigene Aufgaben im Projekt</div>
-  <span *ngFor="let task of project.tasks; last as l">
+<div *ngIf="project">
+  <div class="title">Eigene Funktion</div>
+  <div>{{project.role}}</div>
+  <br>
+  <div class="ItemList">
+    <div class="title">Eigene Aufgaben im Projekt</div>
+    <span *ngFor="let task of project.tasks; last as l">
       {{task}} <span *ngIf="!l">,</span>
     </span>
-</div>
-<br>
-<div class="ItemList">
-  <div class="title">Eigesetzte Technologien</div>
-  <span *ngFor="let technology of project.technologies; last as l">
+  </div>
+  <br>
+  <div class="ItemList">
+    <div class="title">Eigesetzte Technologien</div>
+    <span *ngFor="let technology of project.technologies; last as l">
       {{technology}} <span *ngIf="!l">,</span>
     </span>
+  </div>
+  <button class="py-2 px-3 m-2 bg-blue-500 hover:bg-nav-hover-blue rounded-md text-white" (click)="showProjectList()">
+    Zurück zur Projektliste
+  </button>
+
 </div>
-<button (click)="showProjectList()">Zurück zur Projektliste</button>

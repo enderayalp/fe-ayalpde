@@ -1,16 +1,7 @@
-<div (click)="showDetails(project)" (mouseenter)="hover=i" (mouseleave)="hover=-1" [ngClass]="{'lightgrey': hover==i}"
-     class="list"
-     *ngFor="let project of projects;index as i;last as lastListItem">
-  <div class="header">
-    <div class="date">
-      <div>{{project.from}} - {{project.to}}</div>
-    </div>
-    <div class="headerTitle">{{project.title}}</div>
-    <div class="customer">{{project.customer}}</div>
-  </div>
-  <br>
-  <div style="white-space: pre-wrap">{{project.description}}</div>
-  <br>
+<app-project-list-item (mouseenter)="hover=i" (mouseleave)="hover=-1"
+                       class="'space-y-10'" *ngFor="let project of projects;index as i,last as last"
+                       [last]="last"
+                       [project]="project"
+                       (click)="showDetails(project)">
+</app-project-list-item>
 
-  <span *ngIf="!lastListItem"><hr></span>
-</div>

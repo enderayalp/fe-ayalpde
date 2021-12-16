@@ -1,4 +1,7 @@
-<a mat-button color="red" routerLink="/home">Home</a>
+<nav class="flex justify-between items-center h-16 bg-gradient-to-r from-gray-200 to-gray-300">
+  <a id="home" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='home'}" routerLink="/home">Home</a>
 
-<a mat-button routerLink="/projects">Projekte</a>
+  <a id="projects" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='projects'}" routerLink="/projects">Projekte</a>
 
+  <a id="blog" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='blog'}" routerLink="/blog">Blog</a>
+</nav>

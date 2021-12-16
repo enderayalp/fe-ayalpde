@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { ProjectComponent } from './project/project.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { ProjectListItemComponent } from './project-list-item/project-list-item.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { ProjectDetailsComponent } from './project-details/project-details.compo
     ProjectComponent,
     ProjectListComponent,
     ProjectDetailsComponent,
+    ProjectListItemComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,
