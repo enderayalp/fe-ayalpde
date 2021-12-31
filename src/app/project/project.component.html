@@ -1,3 +1,6 @@
-<app-project-list  *ngIf="viewState=== 'list'" (showDetailsEvent)="showDetails($event)"></app-project-list>
+
+<app-project-list *ngIf="viewState=== 'list'" (showDetailsEvent)="showDetails($event)"></app-project-list>
 <app-project-details [project]="project" *ngIf="viewState==='details'"
                      (showListEvent)="showList()"></app-project-details>
+
+

@@ -1,23 +1,41 @@
-<section [ngClass]="'hover:bg-gray-100'">
-  <p class="text-red-500">{{project.from}} - {{project.to}}</p>
-  <p>{{project.title}}</p>
-  <p>{{project.customer}}</p>
-  <p>Eigene Funktion</p>
-  <p>{{project.role}}</p>
-  <br>
-  <div>
-    <div>Eigene Aufgaben im Projekt</div>
-    <span *ngFor="let task of project.tasks; last as l">
-      {{task}} <span *ngIf="!l">,</span>
-    </span>
-  </div>
-  <br>
-  <div>
-    <div class="divide-y divide-solid divide-rose-400">Eigesetzte Technologien</div>
-    <span *ngFor="let technology of project.technologies; last as l">
-      {{technology}} <span *ngIf="!l">,</span>
-    </span>
+<div id="card_open" [ngClass]="{'block' : !modalState}" (click)="switchModalState()"
+     class="p-6 h-80 bg-white shadow-md text-slate-900 rounded-lg overflow-auto
+     hover:-translate-y-1 hover:shadow-2xl  duration-200
+     rounded-md block">
+  <section>
+    <p class="text-lg font-bold leading-5 text-gray-600" >{{project.title}}</p>
+    <p class="mt-2 text-sm text-red-900 opacity-60 'Bebas Neue'">{{project.from}} — {{project.to}}</p>
 
+    <p class="mt-2">{{project.shortDescription}}</p>
+  </section>
+</div>
+
+<div id="card_panel" [ngClass]="{'block animate-fade':modalState, 'hidden' : !modalState}"
+     class="backdrop-blur-sm main-modal fixed w-full inset-0 z-50 overflow-hidden flex justify-center items-center">
+  <div class="modal-container
+      bg-white shadow-2xl
+      md:w-4/12
+      rounded-xl">
+    <div class="modal-content py-4 text-left px-6">
+      <div class="flex justify-between items-center pb-3">
+        <div id="card_close" class="modal-close cursor-pointer z-50">
+          <svg (click)="switchModalState()" class="fill-current text-white-500" xmlns="http://www.w3.org/2000/svg"
+               width="18" height="18"
+               viewBox="0 0 18 18">
+            <path
+              d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+          </svg>
+        </div>
+      </div>
+      <div class="my-5 mr-5 ml-5 flex justify-center">
+        <app-project-details [project]="project"></app-project-details>
+      </div>
+    </div>
   </div>
-</section>
+</div>
+
+
+
+
+
 

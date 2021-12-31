@@ -3,6 +3,8 @@ export interface Project {
   title: string;
   //Kunde
   customer: string;
+  //Project Kurzberschreibung
+  shortDescription: string;
   //Project Beschreibung
   description: string;
   //Project Begin

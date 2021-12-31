@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { Project } from '../shared/model/project';
 
 @Component({
@@ -9,8 +9,20 @@ import { Project } from '../shared/model/project';
 export class ProjectListItemComponent implements OnInit {
   @Input() project: Project;
   @Input() last: boolean;
+  @Output() modalEvent = new EventEmitter<boolean>();
+  modalState: boolean;
 
   constructor() {}
 
   ngOnInit(): void {}
+
+
+  switchModalState() {
+    this.modalState = !this.modalState;
+    if(this.modalState){
+      console.log("switch "+this.modalState)
+      this.modalEvent.emit(this.modalState)
+    }
+    console.log(this.modalState)
+  }
 }

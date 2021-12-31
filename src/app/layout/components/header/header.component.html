@@ -1,7 +1,13 @@
-<nav class="flex justify-between items-center h-16 bg-gradient-to-r from-gray-200 to-gray-300">
-  <a id="home" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='home'}" routerLink="/home">Home</a>
+<div class="mt-2 grid grid-cols-4">
+  <nav class="col-span-3 space-x-16">
+    <a id="home" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='home'}" routerLink="/">Home</a>
 
-  <a id="projects" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='projects'}" routerLink="/projects">Projekte</a>
+    <a id="projects" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='projects'}"
+       routerLink="/projects">Projekte</a>
 
-  <a id="blog" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='blog'}" routerLink="/blog">Blog</a>
-</nav>
+    <a id="blog" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='blog'}" routerLink="/blog">Blog</a>
+
+  </nav>
+  <p class="font-bold col-span-1 w-11/12 text-center bg-red-200">VERFÜGBAR AB 01.02.2022</p>
+</div>
+

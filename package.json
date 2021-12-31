@@ -23,6 +23,7 @@
     "@tailwindcss/forms": "^0.4.0",
     "@tailwindcss/typography": "^0.5.0",
     "autoprefixer": "^10.4.0",
+    "classlist.js": "^1.1.20150312",
     "node.js": "0.0.1-security",
     "nvm": "^0.0.4",
     "postcss": "^8.4.4",
@@ -30,6 +31,7 @@
     "postcss-custom-properties": "^12.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
+    "web-animations-js": "^2.3.2",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

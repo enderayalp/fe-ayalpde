@@ -10,7 +10,9 @@ export class HeaderComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.activeId= 'home'
+  }
 
   setActive(event: MouseEvent) {
     let target = event.target as HTMLElement;

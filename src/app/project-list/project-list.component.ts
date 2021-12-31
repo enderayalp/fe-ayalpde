@@ -11,6 +11,7 @@ export class ProjectListComponent implements OnInit {
   hover?: number;
   projects: Project[];
   @Output() showDetailsEvent = new EventEmitter<Project>();
+  isModal: boolean;
 
   constructor(private projectStoreService: ProjectStoreService) {
     this.hover = -1;
@@ -21,6 +22,10 @@ export class ProjectListComponent implements OnInit {
     this.showDetailsEvent.emit(project);
   }
 
+  setModal(isModal: boolean){
+    this.isModal=isModal;
+    console.log("isModal"+isModal)
+  }
   ngOnInit(): void {
     this.projects = this.projectStoreService.getAllProjects();
   }

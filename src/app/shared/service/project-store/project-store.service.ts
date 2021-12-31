@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { Project } from '../../model/project';
+import {Injectable} from '@angular/core';
+import {Project} from '../../model/project';
 
 @Injectable({
   providedIn: 'root',
@@ -14,20 +14,21 @@ export class ProjectStoreService {
   constructor() {
     this.projects = [
       {
-        title: 'Backend für Redakteure für die Erstellung von Angeboten',
+        title: 'Werbeplatform',
         customer: 'Marketing Dienstleister',
+        shortDescription: 'Webplatform für die Erstellung und Pflege von Werbungen und Rabatten für Den Endverbraucher',
         description:
-          'Ein Kunde Marktführer im Bereich Mitarbeiterrabatte. ' +
+          'Ein Kunde Marktführer im Bereich Werbeplatform mit dem Focus auf Rabatte für Endverbraucher. ' +
           'Um diese Position weiterhin behaupten und ausbauen zu können, ' +
           'hat sich der Kunde zu einer Neuentwicklung der existierenden Softwareplattform ' +
-          'und der zu Grunde liegenden Infrastruktur entschieden. DIese Neuentwicklung wird ' +
+          'und der zu Grunde liegenden Infrastruktur entschieden. Diese Neuentwicklung wird ' +
           'von adesso in den Bereichen Requirements Engineering, Business Analyse, ' +
           'Operations Management und der Softwareentwicklung unterstützt. Hierbei wird der ' +
           'Kunde bei der Aufnahme der Ist-Prozesse, Entwicklung optimierter Soll-Prozesse, ' +
           'der Implementierung der Software und dem Weiterbetrieb der "alten" Plattform bis zur ' +
-          'Ablösung durch das neue Produkt, durch adesso unterstützt.',
-        from: '08/2017',
-        to: '08/2019',
+          'Ablösung durch das neue Produkt unterstützt.',
+        from: 'August 2017',
+        to: 'August 2019',
         role: 'Software Engineer',
         technologies: [
           'Angular',
@@ -62,12 +63,13 @@ export class ProjectStoreService {
       {
         title: 'Auftragstransparenz Komponente',
         customer: 'Telekommunikationsunternehmen',
+        shortDescription: 'Neuentwicklung eines Portals für Auftragsabwicklung im E2E Bereich',
         description:
           'Green Field Scrum Projekt. Neuentwicklung eines Portals (intern und extern)\n' +
           'für Auftragsabwicklung im E2E Bereich. Design und Entwicklung von\n' +
           'Microservices, Frontend und Backend.',
-        from: '08/2020',
-        to: '01/2022',
+        from: 'August 2020',
+        to: 'Januar 2022',
         role: 'Software Engineer',
         technologies: [
           'Springboot',
@@ -97,13 +99,42 @@ export class ProjectStoreService {
         ],
       },
       {
-        title: 'Baufinanzierung',
-        customer: 'Finanzsektor',
+        title: 'Electronic Point of Sales (EPOS)',
+        customer: 'Telekommunikationsunternehmen',
+        shortDescription: 'Neuentwicklung eines Portals für eine Auftragsabwicklung im E2E Bereich',
         description:
-          'Green Field Scrum Projekt.\nUI Entwicklung nach Kundenvorgabe in JSF und Java.\n' +
-          'Das Projekt umfasste mehr 5 Entwickler Teams mit jeweils 5-8 Personen.',
-        from: '04/2014',
-        to: '09/2016',
+          'Frontend Kundenverwaltungssystem. Anbindung neuer Services\n' +
+          'aus MCE (siehe nachfolge Projekt) wie z.B. Bankdatenvalidierung,\n' +
+          'Adressabgleich, Fraudprävention und Entwicklung der UI.',
+        from: 'Oktober 2016',
+        to: 'März 2017',
+        role: 'Software Engineer',
+        technologies: [
+          'Java',
+          'Wicket',
+          'REST',
+          'JBoss',
+          'Maven',
+          'GIT',
+          'SCRUM',
+          'JIRA',
+          'GITLab',
+          'IntelliJ',
+        ],
+        tasks: ['Frontend- und Backend-Entwicklung.'],
+      },
+      {
+        title: 'Baufinanzierung',
+        customer: 'Bankensektor',
+        shortDescription: 'Applikation für die Unterstützung des Bankmitarbeiters bei der Abwicklung eines gesamten Baufinanzierungsprozesses',
+        description:
+          'Green Field Scrum Projekt. ' +
+          'Die Applikation deckt den gesamten Kreditlebenszyklus ab. ' +
+          'Von der Kreditantragsprüfung über die Bearbeitung und Verwaltung ' +
+          'aller notwendigen Daten, unterstützt die Anwendung den Bankmitarbeiter ' +
+          'Schritt für Schritt durch den Baufinanzierungsprozess',
+        from: 'April 2014',
+        to: 'September 2016',
         role: 'Software Engineer',
         technologies: [
           'Java',
@@ -126,64 +157,15 @@ export class ProjectStoreService {
         ],
       },
       {
-        title: 'Electronic Point of Sales',
-        customer: 'Telekommunikationsunternehmen',
-        description:
-          'Frontend Kundenverwaltungssystem. Anbindung neuer Services\n' +
-          'aus MCE (siehe nachfolge Projekt) wie z.B. Bankdatenvalidierung,\n' +
-          'Adressabgleich, Fraudprävention und Entwicklung der UI.',
-        from: '10/2016',
-        to: '03/2017',
-        role: 'Software Engineer',
-        technologies: [
-          'Java',
-          'Wicket',
-          'REST',
-          'JBoss',
-          'Maven',
-          'GIT',
-          'SCRUM',
-          'JIRA',
-          'GITLab',
-          'IntelliJ',
-        ],
-        tasks: ['Frontend- und Backend-Entwicklung.'],
-      },
-      {
-        title: 'Baufinanzierung',
-        customer: 'Finanzsektor',
-        description:
-          'Green Field Scrum Projekt.\nUI Entwicklung nach Kundenvorgabe in JSF und Java.\n' +
-          'Das Projekt umfasste mehr 5 Entwickler Teams mit jeweils 5-8 Personen.',
-        from: '04/2014',
-        to: '09/2016',
-        role: 'Software Engineer',
-        technologies: [
-          'JSF',
-          'CSS',
-          'HTML',
-          'Selenium',
-          'Java',
-          'SQL',
-          'Maven',
-          'Weblogic',
-          'SVN',
-          'JUnit',
-          'IntelliJ',
-          'SCRUM',
-        ],
-        tasks: [
-          'Frontend-Entwicklung in JSF und Backend Entwicklung in Java und SQL.',
-        ],
-      },
-      {
         title: 'Stücklistenauflösung',
         customer: 'Automobilhersteller',
+        shortDescription: 'Stücklistenauflösung von Fahrzeugen  mit dem Ziel eine gute Prognose für den Teilebedarf ' +
+          'für sowohl den kurzfristigen als auch den mittel und langfristigen Planungshorizont zu ermitteln ',
         description:
           'Integration und Erweiterung der Entwicklung aus meiner\n' +
-          'Diplomarbeit in ein Bedarfsmanagement-System von BMW.',
-        from: '12/2010',
-        to: '07/2013',
+          'Diplomarbeit in ein Bedarfsmanagement-System.',
+        from: 'Dezember 2010',
+        to: 'Juli 2013',
         role: 'Software Engineer',
         technologies: ['Java', 'C++', 'Maven', 'SVN', 'JUnit', 'JIRA', 'SCRUM'],
         tasks: [
@@ -193,12 +175,14 @@ export class ProjectStoreService {
       },
       {
         title: 'Entwicklung von Simulationskomponenten',
+        shortDescription: 'Verschiedenste Programmiertätigkeiten als Wissenschaftliche Hilfskraft an der Fakultät Maschinenbau der TU Dortmund. ',
         customer: 'TU Dortmund, Fachbereich Maschinenbau',
-        description: 'Ein c++ Project',
-        from: '03/2006',
-        to: '09/2009',
+        description: 'Verschiedenste Programmiertätigkeiten als Wissenschaftliche Hilfskraft an der Fakultät Maschinenbau der Technischen Universität Dortmund.' +
+          'Das zentrale Projekt für mich  war in dieser Zeit die Erstellung, Erweiterung und Pflege einer GUI für die Ansteuerung eines bereits bestehenden Kammermodel Simulators',
+        from: 'März 2006',
+        to: 'September 2009',
         role: 'Software Engineer',
-        technologies: ['C++', 'QT', 'VBA'],
+        technologies: ['C++', 'Microsoft Visual Studio', 'VBA'],
         tasks: [
           'Entwicklung von Simulationskomponenten als Wissenschaftliche Hilfskraft',
         ],

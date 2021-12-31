@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Project} from "../shared/model/project";
 
 @Component({
   selector: 'app-blog',
@@ -6,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog.component.css'],
 })
 export class BlogComponent implements OnInit {
-  constructor() {}
+  modalState: boolean;
 
-  ngOnInit(): void {}
+  constructor() {
+  }
+
+  ngOnInit(): void {
+  }
+
+  switchModalState() {
+    this.modalState = !this.modalState;
+    console.log(this.modalState)
+  }
 }

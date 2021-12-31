@@ -1,7 +1,7 @@
-<app-project-list-item (mouseenter)="hover=i" (mouseleave)="hover=-1"
-                       class="'space-y-10'" *ngFor="let project of projects;index as i,last as last"
+<div  class="grid md:grid-cols-3 gap-6 mt-10 ms:grid-cols-1">
+<app-project-list-item  [ngClass]="{'overlay' : (isModal)}" (modalEvent)="setModal($event)" class="justify-items-start" (mouseenter)="hover=i" (mouseleave)="hover=-1"
+                       *ngFor="let project of projects;index as i,last as last"
                        [last]="last"
-                       [project]="project"
-                       (click)="showDetails(project)">
+                       [project]="project">
 </app-project-list-item>
-
+</div>
