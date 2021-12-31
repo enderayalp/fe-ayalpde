@@ -1,13 +1,30 @@
-<div class="mt-2 grid grid-cols-4">
-  <nav class="col-span-3 space-x-16">
+
+<nav class="hidden md:visible md:uppercase mt-2 md:grid md:grid-cols-2 md:font-bold ">
+  <div class="space-x-16">
     <a id="home" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='home'}" routerLink="/">Home</a>
 
     <a id="projects" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='projects'}"
        routerLink="/projects">Projekte</a>
 
     <a id="blog" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='blog'}" routerLink="/blog">Blog</a>
+  </div>
 
-  </nav>
-  <p class="font-bold col-span-1 w-11/12 text-center bg-red-200">VERFÜGBAR AB 01.02.2022</p>
-</div>
+  <a class="ml-56 text-center bg-red-200">Verfügbar ab 01.02.2022</a>
+</nav>
 
+<nav class="mt-2 flex justify-end visible md:invisible ">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-8 h-8 "
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M4 6h16M4 12h16M4 18h16"
+    />
+  </svg>
+</nav>
