@@ -6,26 +6,22 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from './layout/layout.module';
 import { HomeComponent } from './home/home.component';
-import { ProjectComponent } from './project/project.component';
-import { ProjectListComponent } from './project-list/project-list.component';
-import { ProjectDetailsComponent } from './project-details/project-details.component';
-import { ProjectListItemComponent } from './project-list-item/project-list-item.component';
-import { BlogComponent } from './blog/blog.component';
+import {ProjectsModule} from "./projects/projects.module";
+import {BlogsModule} from "./blogs/blogs.module";
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ProjectComponent,
-    ProjectListComponent,
-    ProjectDetailsComponent,
-    ProjectListItemComponent,
-    BlogComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ProjectsModule,
+    BlogsModule,
+
     LayoutModule,
   ],
   providers: [],

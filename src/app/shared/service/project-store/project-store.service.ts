@@ -29,7 +29,7 @@ export class ProjectStoreService {
           'Ablösung durch das neue Produkt unterstützt.',
         from: 'August 2017',
         to: 'August 2019',
-        role: 'Software Engineer',
+        role: 'Senior Software Engineer',
         technologies: [
           'Angular',
           'JavaScript',
@@ -65,12 +65,12 @@ export class ProjectStoreService {
         customer: 'Telekommunikationsunternehmen',
         shortDescription: 'Neuentwicklung eines Portals für Auftragsabwicklung im E2E Bereich',
         description:
-          'Green Field Scrum Projekt. Neuentwicklung eines Portals (intern und extern)\n' +
-          'für Auftragsabwicklung im E2E Bereich. Design und Entwicklung von\n' +
+          'Green Field Scrum Projekt. Neuentwicklung eines Portals (intern und extern)' +
+          'für Auftragsabwicklung im E2E Bereich. Design und Entwicklung von' +
           'Microservices, Frontend und Backend.',
         from: 'August 2020',
         to: 'Januar 2022',
-        role: 'Software Engineer',
+        role: 'Senior Software Engineer',
         technologies: [
           'Springboot',
           'Java',
@@ -99,16 +99,54 @@ export class ProjectStoreService {
         ],
       },
       {
+        title: ' MCE (Multi Channel Engine)',
+        customer: 'Telekommunikationsunternehmen',
+        shortDescription: 'Schnittstelle zwischen Clients und Backends. Weiter- und' +
+          'Neuentwicklung von Services. Request und Response handling. Service' +
+          'Orchestrierung.',
+        description:
+          'Schnittstelle zwischen Clients und Backends. Weiter- und' +
+          'Neuentwicklung von Services. Request und Response handling. Service' +
+          'Orchestrierung.',
+        from: 'April 2017',
+        to: 'August 2019',
+        role: 'Senior Software Engineer',
+        technologies: [
+          'Java',
+          'Spring Boot',
+          'Maven',
+          'Mockito',
+          'JUnit',
+          'Git',
+          'Rest',
+          'OpenApi',
+          'JPA',
+          'Spring Data',
+          'JIRA',
+          'SCRUM',
+          'Jenkins',
+          'JUnit',
+          'SOAP UI',
+          'Spring DI',
+        ],
+        tasks: [
+          'Backend-Entwicklung in Java und SQL.',
+          'Solution Design',
+          'Schnittstellen Design',
+          'Umwandlung von einzelnen Monoliten in Microservices'
+        ],
+      },
+      {
         title: 'Electronic Point of Sales (EPOS)',
         customer: 'Telekommunikationsunternehmen',
         shortDescription: 'Neuentwicklung eines Portals für eine Auftragsabwicklung im E2E Bereich',
         description:
-          'Frontend Kundenverwaltungssystem. Anbindung neuer Services\n' +
-          'aus MCE (siehe nachfolge Projekt) wie z.B. Bankdatenvalidierung,\n' +
+          'Frontend Kundenverwaltungssystem. Anbindung neuer Services' +
+          'aus MCE (siehe nachfolge Projekt) wie z.B. Bankdatenvalidierung,' +
           'Adressabgleich, Fraudprävention und Entwicklung der UI.',
         from: 'Oktober 2016',
         to: 'März 2017',
-        role: 'Software Engineer',
+        role: 'Senior Software Engineer',
         technologies: [
           'Java',
           'Wicket',
@@ -135,7 +173,7 @@ export class ProjectStoreService {
           'Schritt für Schritt durch den Baufinanzierungsprozess',
         from: 'April 2014',
         to: 'September 2016',
-        role: 'Software Engineer',
+        role: 'Senior Software Engineer',
         technologies: [
           'Java',
           'Microservices',
@@ -162,11 +200,11 @@ export class ProjectStoreService {
         shortDescription: 'Stücklistenauflösung von Fahrzeugen  mit dem Ziel eine gute Prognose für den Teilebedarf ' +
           'für sowohl den kurzfristigen als auch den mittel und langfristigen Planungshorizont zu ermitteln ',
         description:
-          'Integration und Erweiterung der Entwicklung aus meiner\n' +
+          'Integration und Erweiterung der Entwicklung aus meiner' +
           'Diplomarbeit in ein Bedarfsmanagement-System.',
         from: 'Dezember 2010',
         to: 'Juli 2013',
-        role: 'Software Engineer',
+        role: 'Senior Software Engineer',
         technologies: ['Java', 'C++', 'Maven', 'SVN', 'JUnit', 'JIRA', 'SCRUM'],
         tasks: [
           'Weiterentwicklung des bestehenden Systems zur Simulation von SupplyChains in C++',
@@ -181,7 +219,7 @@ export class ProjectStoreService {
           'Das zentrale Projekt für mich  war in dieser Zeit die Erstellung, Erweiterung und Pflege einer GUI für die Ansteuerung eines bereits bestehenden Kammermodel Simulators',
         from: 'März 2006',
         to: 'September 2009',
-        role: 'Software Engineer',
+        role: 'Senior Software Engineer',
         technologies: ['C++', 'Microsoft Visual Studio', 'VBA'],
         tasks: [
           'Entwicklung von Simulationskomponenten als Wissenschaftliche Hilfskraft',

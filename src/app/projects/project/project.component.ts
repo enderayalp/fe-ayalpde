@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Project } from '../shared/model/project';
+import { Project } from '../../shared/model/project';
 
 type ViewState = 'list' | 'details';
 

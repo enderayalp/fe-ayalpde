@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,15 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   activeId: string;
+  isMobileMenuOpen: boolean = false;
 
-  constructor() {}
+  constructor() {
+  }
 
   ngOnInit(): void {
-    this.activeId= 'home'
+    this.activeId = 'home'
   }
 
   setActive(event: MouseEvent) {
     let target = event.target as HTMLElement;
     this.activeId = target.id;
+  }
+
+  toggleMobileMenu() {
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
 }

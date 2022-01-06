@@ -1,24 +1,11 @@
 
-<nav class="hidden md:visible md:uppercase mt-2 md:grid md:grid-cols-2 md:font-bold ">
-  <div class="space-x-16">
-    <a id="home" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='home'}" routerLink="/">Home</a>
-
-    <a id="projects" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='projects'}"
-       routerLink="/projects">Projekte</a>
-
-    <a id="blog" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='blog'}" routerLink="/blog">Blog</a>
-  </div>
-
-  <a class="ml-56 text-center bg-red-200">Verfügbar ab 01.02.2022</a>
-</nav>
-
-<nav class="mt-2 flex justify-end visible md:invisible ">
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    class="w-8 h-8 "
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
+<nav class="mt-2 flex justify-end visible md:invisible hover:cursor-pointer">
+  <svg id="mobileMenu" (click)="toggleMobileMenu()"
+       xmlns="http://www.w3.org/2000/svg"
+       class="w-8 h-8 "
+       fill="none"
+       viewBox="0 0 24 24"
+       stroke="currentColor"
   >
     <path
       stroke-linecap="round"
@@ -28,3 +15,22 @@
     />
   </svg>
 </nav>
+
+<nav [ngClass]="{'hidden md:visible md:uppercase mt-2 md:grid md:grid-cols-2 md:font-bold hover:cursor-pointer':!isMobileMenuOpen,
+                              'visible grid grid-cols-1':isMobileMenuOpen }">
+  <div class="space-x-16">
+    <a id="home" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='home'}" routerLink="/">Home</a>
+
+    <a id="projects" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='projects'}"
+       routerLink="/projects">Projekte</a>
+
+    <a id="blog" (click)="setActive($event)" [ngClass]="{'text-red-700': activeId==='blog'}" routerLink="/blog">Blog</a>
+  </div>
+  <div class="space-x-16 flex justify-end">
+  <a class="ml-48 text-center bg-red-200">Verfügbar ab 01.02.2022</a>
+  <a class="text-center" href="/assets/files/Ender_Ayalp-CV.pdf" download="Ender_Ayalp-CV.pdf">Download CV PDF</a>
+    <a class="text-center" href="/assets/files/Ender_Ayalp-CV.docx" download="Ender_Ayalp-CV.docx">Download CV WORD</a>
+  </div>
+</nav>
+
+

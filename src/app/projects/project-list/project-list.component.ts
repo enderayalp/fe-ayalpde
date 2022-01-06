@@ -1,6 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { Project } from '../shared/model/project';
-import { ProjectStoreService } from '../shared/service/project-store/project-store.service';
+import { Project } from '../../shared/model/project';
+import { ProjectStoreService } from '../../shared/service/project-store/project-store.service';
 
 @Component({
   selector: 'app-project-list',
