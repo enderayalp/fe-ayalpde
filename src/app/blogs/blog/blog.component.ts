@@ -10,7 +10,7 @@ type ViewState = 'list' | 'details';
   styleUrls: ['./blog.component.css'],
 })
 export class BlogComponent implements OnInit {
-  blog: Blog;
+  blogs: Blog;
   viewState: ViewState = 'list';
 
   constructor() {}
@@ -19,10 +19,11 @@ export class BlogComponent implements OnInit {
     this.viewState = 'list';
   }
 
-  showDetails(blog: Blog) {
-    this.blog = blog;
+  showDetails(blogs: Blog) {
+    this.blogs = blogs;
     this.viewState = 'details';
   }
+
   ngOnInit(): void {
   }
 

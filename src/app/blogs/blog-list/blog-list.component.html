@@ -1,5 +1,5 @@
 <app-blog-list-item *ngFor="let blogEntry of blogEntries"
                     [blog]="blogEntry"
-                    (click)="showDetails(null)"
+                    (click)="showDetails(blogEntry)"
                     class="grid md:grid-cols-3 gap-6 mt-10 ms:grid-cols-1 hover:cursor-pointer">
 </app-blog-list-item>
