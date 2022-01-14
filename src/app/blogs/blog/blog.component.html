@@ -1,1 +1,2 @@
 <app-blog-list *ngIf="viewState=== 'list'" (showDetailsEvent)="showDetails($event)"></app-blog-list>
+<app-blog-detail *ngIf="viewState=== 'details'" [blog]="blog" (showBlogListEvent)="showList()"></app-blog-detail>

@@ -14,12 +14,14 @@ export class BlogStoreService {
   constructor() {
     this.blogs = [
       {
-        title: "Comming Soon",
-        content: "Blog Kurz-Beschreibung 1"
+        title: "Postman Scripting",
+        shortDescription: "In diesem Blog möchte ich euch zeigen wie ihr mit Postman Scripting die Ausführung der Requests programmatisch verändern könnt.",
+        content: `<p><em>Der Blogeintrag ist noch in Arbeit und wird hier in k&uuml;rze erscheinen.</em></p>`
       },
       {
-        title: "Comming Soon",
-        content: "Blog Kurz-Beschreibung 2"
+        title: "Business Exceptions sind eine schlechte Idee",
+        shortDescription: "Hier möchte ich euch aufzeigen warum Exceptions eine schlechte Idee sind und wie man es besser machen kann.",
+        content: "<p><em>Der Blogeintrag ist noch in Arbeit und wird hier in k&uuml;rze erscheinen.</em></p>"
       }
     ]
 

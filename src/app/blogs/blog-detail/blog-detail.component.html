@@ -1,1 +1,6 @@
-<p>blog-detail works!</p>
+<div *ngIf="blog">
+  <div class="mt-10 text-2xl font-bold leading-6 text-gray-600">{{blog.title}}</div>
+  <div class="mt-2" [innerHTML]="blog.content"></div>
+  <button class="mt-20 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-1 px-2 border border-gray-400 rounded shadow"
+          (click)="showBlogList()">zurück</button>
+</div>

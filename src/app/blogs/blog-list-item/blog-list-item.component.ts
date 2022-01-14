@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output} from '@angular/core';
 import {Blog} from "../../shared/model/blog";
 
 @Component({
@@ -12,5 +12,6 @@ export class BlogListItemComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
 }
